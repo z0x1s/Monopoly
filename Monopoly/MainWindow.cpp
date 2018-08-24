@@ -2,17 +2,23 @@
 #include "MainWindow.h"
 
 
-MainWindow::MainWindow(sf::VideoMode &vmode)
+MainWindow::MainWindow(sf::VideoMode &vmode, sf::String title)
 {
 	this->vid_mode = &vmode;
+	this->title = title;
 	rw = new sf::RenderWindow(*vid_mode, this->title);
 	this->closed = false;
 	this->clock = sf::Clock();
 }
 
+void MainWindow::close()
+{
+	this->closed = true;
+}
+
 void MainWindow::loop()
 {
-	while (this->closed != false)
+	while (!this->closed)
 	{
 		this->fps_correct();
 		this->render();
@@ -23,7 +29,7 @@ void MainWindow::render()
 {
 	this->event_handle();
 	rw->clear();
-
+	this->drawing();
 	rw->display();
 }
 

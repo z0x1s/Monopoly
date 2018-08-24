@@ -11,18 +11,17 @@ class MainWindow
 	sf::Clock clock;
 	float current_timeloop;
 	bool closed;
-	std::list<sf::Drawable> render_list;
 public:
-	MainWindow(sf::VideoMode &vmode);
-
+	MainWindow(sf::VideoMode &vmode, sf::String title);
 	void loop();
-
+	void close();
+private:
 	void render();
 	void event_handle();
 	void fps_correct();
 	void drawing();
-	void 
 
+public:
 	~MainWindow();
 };
 
