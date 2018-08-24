@@ -161,6 +161,7 @@
   <ItemGroup>
     <ClInclude Include="Main.h" />
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="MonopolyMap.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="win_utils.h" />
@@ -168,6 +169,7 @@
   <ItemGroup>
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="Monopoly.cpp" />
+    <ClCompile Include="MonopolyMap.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

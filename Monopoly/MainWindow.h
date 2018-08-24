@@ -1,6 +1,7 @@
 #pragma once
 
 #include "stdafx.h"
+#include "MonopolyMap.h"
 
 class MainWindow
 {
@@ -9,6 +10,7 @@ class MainWindow
 	sf::String title;
 	sf::Event event;
 	sf::Clock clock;
+	MonopolyMap monmap;
 	float current_timeloop;
 	bool closed;
 public:

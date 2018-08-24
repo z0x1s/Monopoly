@@ -35,7 +35,7 @@ void MainWindow::render()
 
 void MainWindow::drawing()
 {
-	
+	monmap.render(rw);
 }
 
 void MainWindow::event_handle()
